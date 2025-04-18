@@ -1,0 +1,302 @@
+/* Styles généraux */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fff0f6; /* Couleur pastel pour l'arrière-plan */
+    color: #4b4b4b;
+}
+
+h2 {
+    color: #ff7eb9; /* Couleur pastel rose pour les titres */
+    font-size: 2.5rem;
+    font-family: 'Dancing Script', cursive;
+    margin-bottom: 2%;
+    text-align: center;
+}
+
+h3 {
+    font-size: 1.8rem;
+    color: #ff85a1;
+}
+
+/* Conteneur */
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 2%;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Images */
+.img-responsive {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.img-curve {
+    border-radius: 25px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Texte */
+.text-right {
+    text-align: right;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-white {
+    color: white;
+}
+
+/* Liens */
+a {
+    color: #ff85a1;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #ff4fa6;
+}
+
+/* Boutons */
+.btn {
+    padding: 1%;
+    border: none;
+    font-size: 1rem;
+    border-radius: 25px;
+    transition: 0.3s;
+    text-align: center;
+}
+
+.btn-primary {
+    background-color: #ff7eb9;
+    color: white;
+    cursor: pointer;
+}
+
+.btn-primary:hover {
+    color: white;
+    background-color: #ff4fa6;
+}
+
+/* Champs et messages */
+fieldset {
+    border: 1px solid #ffc1e3;
+    margin: 5%;
+    padding: 3%;
+    border-radius: 15px;
+    background-color: #fff0f6;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.error {
+    padding: 2%;
+    color: #ff4fa6;
+}
+
+.success {
+    padding: 2%;
+    color: #28a745;
+}
+
+/* Navbar */
+.logo {
+    width: 10%;
+    float: left;
+}
+
+.menu {
+    line-height: 60px;
+    background-color: #ffe3e6;
+    padding: 1%;
+    border-radius: 15px;
+}
+
+.menu ul {
+    list-style-type: none;
+}
+
+.menu ul li {
+    display: inline;
+    padding: 1%;
+    font-weight: bold;
+}
+
+/* Sections */
+.food-search {
+    background-image: url(../images/bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 7% 0;
+    border-radius: 15px;
+}
+
+.food-search input[type="search"] {
+    width: 50%;
+    padding: 1%;
+    font-size: 1rem;
+    border: none;
+    border-radius: 25px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Catégories */
+.categories {
+    padding: 4% 0;
+}
+
+.box-3 {
+    width: 28%;
+    float: left;
+    margin: 2%;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.box-3:hover {
+    transform: scale(1.05);
+}
+
+/* Menu des plats */
+.food-menu {
+    background-color: #ffe3e6;
+    padding: 4% 0;
+    border-radius: 15px;
+}
+
+.food-menu-box {
+    width: 43%;
+    margin: 1%;
+    padding: 2%;
+    float: left;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.food-menu-img {
+    width: 20%;
+    float: left;
+    border-radius: 15px;
+}
+
+.food-menu-desc {
+    width: 70%;
+    float: left;
+    margin-left: 8%;
+}
+
+.food-price {
+    font-size: 1.2rem;
+    margin: 2% 0;
+    color: #ff85a1;
+}
+
+/* Réseaux sociaux */
+.social ul {
+    list-style-type: none;
+}
+
+.social ul li {
+    display: inline;
+    padding: 1%;
+}
+
+/* Section Commande */
+.order {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.input-responsive {
+    width: 96%;
+    padding: 1%;
+    margin-bottom: 3%;
+    border: none;
+    border-radius: 15px;
+    font-size: 1rem;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.order-label {
+    margin-bottom: 1%;
+    font-weight: bold;
+    color: #ff4fa6;
+}
+
+/* Mobile */
+@media only screen and (max-width: 768px) {
+    .logo {
+        width: 80%;
+        float: none;
+        margin: 1% auto;
+    }
+
+    .menu ul {
+        text-align: center;
+    }
+
+    .food-search input[type="search"] {
+        width: 90%;
+        padding: 2%;
+        margin-bottom: 3%;
+    }
+
+    .btn {
+        width: 91%;
+        padding: 2%;
+    }
+
+    .food-search {
+        padding: 10% 0;
+    }
+
+    .categories {
+        padding: 20% 0;
+    }
+
+    h2 {
+        margin-bottom: 10%;
+    }
+
+    .box-3 {
+        width: 100%;
+        margin: 4% auto;
+    }
+
+    .food-menu {
+        padding: 20% 0;
+    }
+
+    .food-menu-box {
+        width: 90%;
+        padding: 5%;
+        margin-bottom: 5%;
+    }
+
+    .social {
+        padding: 5% 0;
+    }
+
+    .order {
+        width: 100%;
+    }
+}

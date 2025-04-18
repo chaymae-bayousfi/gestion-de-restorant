@@ -1,0 +1,113 @@
+/* Formulaire de connexion */
+.login {
+    border: 2px solid #ffc1e3;
+    width: 30%;
+    margin: 5% auto;
+    padding: 2%;
+    background-color: #ffe3e6;
+    border-radius: 15px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+/* Formulaire de connexion */
+.login {
+    width: 30%;
+    margin: 5% auto;
+    padding: 2%;
+    background-color: #fff0f6; /* Douce couleur pastel */
+    border-radius: 25px; /* Coins plus arrondis */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Ombre plus marquée */
+    border: none; /* Suppression de la bordure pour un aspect propre */
+    position: relative; /* Nécessaire pour le design décoratif */
+    overflow: hidden;
+}
+
+.login:before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(120deg, #ff7eb9, #ffc1e3, #ff85a1);
+    z-index: 0;
+    transform: rotate(45deg);
+    opacity: 0.1; /* Effet d'arrière-plan décoratif */
+}
+
+.login h2 {
+    text-align: center;
+    font-size: 2rem;
+    font-family: 'Dancing Script', cursive; /* Police élégante */
+    color: #ff4fa6;
+    margin-bottom: 2rem;
+    position: relative;
+    z-index: 1;
+}
+
+.login form {
+    position: relative;
+    z-index: 1;
+}
+
+.login label {
+    display: block;
+    font-weight: bold;
+    color: #ff85a1;
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+}
+
+.login input[type="text"],
+.login input[type="password"] {
+    width: 90%;
+    padding: 1rem;
+    margin: 0.5rem auto 1rem;
+    border: none;
+    border-radius: 25px;
+    font-size: 1rem;
+    background-color: #ffe3e6;
+    color: #4b4b4b;
+    box-shadow: inset 0px 4px 8px rgba(0, 0, 0, 0.1);
+    outline: none;
+    transition: all 0.3s;
+}
+
+.login input[type="text"]:focus,
+.login input[type="password"]:focus {
+    box-shadow: 0px 0px 8px rgba(255, 120, 185, 0.5); /* Effet de focus */
+}
+
+.login button {
+    display: block;
+    width: 95%;
+    padding: 1rem;
+    margin: 1rem auto;
+    background-color: #ff7eb9;
+    color: white;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.login button:hover {
+    background-color: #ff4fa6;
+    transform: scale(1.05); /* Légère mise en avant */
+}
+
+.login p {
+    text-align: center;
+    font-size: 0.9rem;
+    color: #747d8c;
+}
+
+.login p a {
+    color: #ff85a1;
+    text-decoration: none;
+}
+
+.login p a:hover {
+    color: #ff4fa6;
+    text-decoration: underline;
+}

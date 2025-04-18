@@ -1,0 +1,171 @@
+/* Styles généraux */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fff0f6; /* Couleur pastel pour l'arrière-plan */
+    color: #4b4b4b;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Dancing Script', cursive;
+    color: #ff7eb9; /* Rose vif pour les titres */
+}
+
+.wrapper {
+    padding: 2%;
+    width: 80%;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Tableaux */
+.tbl-full {
+    width: 100%; /* La table occupe tout l'espace du conteneur */
+    border-collapse: collapse;
+    table-layout: fixed; /* Fixe la largeur des colonnes pour éviter les débordements */
+    overflow-wrap: break-word; /* Coupe les mots trop longs */
+}
+
+table tr th, table tr td {
+    border: 1px solid #ffb3c1; /* Bordure pastel */
+    padding: 8px 12px; /* Ajustement des marges internes */
+    text-align: left;
+}
+
+table tr:nth-child(even) {
+    background-color: #ffe3e6; /* Couleur des lignes paires */
+}
+
+table tr:nth-child(odd) {
+    background-color: #fff0f6; /* Couleur des lignes impaires */
+}
+
+table tr th {
+    background-color: #ffc1e3;
+    color: #4b4b4b;
+    font-weight: bold;
+    text-align: center;
+    overflow: hidden; /* Cache les débordements */
+    text-overflow: ellipsis;
+    white-space: nowrap; /* Empêche les en-têtes de se couper */
+}
+
+table td {
+    word-wrap: break-word; /* Coupe les longues chaînes */
+    overflow-wrap: break-word; /* Gestion des débordements */
+    text-align: center; /* Centrer les données */
+}
+
+table .actions {
+    white-space: nowrap; /* Empêche les boutons ou liens de se couper */
+    text-align: center;
+}
+
+.table-container {
+    max-width: 100%; /* Limite la largeur totale de la table */
+    overflow-x: auto; /* Ajoute un défilement horizontal si nécessaire */
+}
+
+
+/* Boutons */
+.btn-primary {
+    background-color: #ff7eb9;
+    padding: 1% 2%;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 25px;
+    transition: 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #ff4fa6;
+}
+
+.btn-secondary {
+    background-color: #c6f1e7;
+    padding: 1% 2%;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 25px;
+    transition: 0.3s;
+}
+
+.btn-secondary:hover {
+    background-color: #92e6d9;
+}
+
+.btn-danger {
+    background-color: #ff7a85;
+    padding: 1% 2%;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 25px;
+    transition: 0.3s;
+}
+
+.btn-danger:hover {
+    background-color: #ff5f73;
+}
+
+/* Messages */
+.success {
+    color: #28a745;
+}
+
+.error {
+    color: #ff4fa6;
+}
+
+/* Menu */
+.menu {
+    border-bottom: 1px solid #ffb3c1;
+    padding: 1%;
+    background-color: #ffe3e6;
+}
+
+.menu ul {
+    list-style-type: none;
+}
+
+.menu ul li {
+    display: inline;
+    padding: 0.5%;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #ff7eb9;
+    transition: 0.3s;
+}
+
+.menu ul li a:hover {
+    color: #ff4fa6;
+}
+
+/* Contenu principal */
+.main-content {
+    background-color: #fff;
+    padding: 3%;
+    border-radius: 15px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer */
+.footer {
+    background-color: #ffc1e3;
+    color: black;
+    text-align: center;
+    padding: 1%;
+    border-radius: 15px;
+}

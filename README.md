@@ -32,25 +32,6 @@ Développée avec **PHP** et **MySQL**, cette application propose une interface 
 
 ---
 
-## 🗂️ Structure du Projet
-
-mini_projet/
-├── admin/ # Interface admin
-│ ├── add-admin.php
-│ ├── manage-category.php
-│ ├── ...
-│ └── partials/ # Menus & pied de page
-├── config/
-│ └── constants.php # Paramètres DB
-├── css/
-│ └── style.css # Feuille de style
-├── images/ # Dossier des images
-│ ├── category/
-│ └── food/
-├── index.php # Page d’accueil
-└── ...
-
----
 
 ## 🚀 Installation rapide
 

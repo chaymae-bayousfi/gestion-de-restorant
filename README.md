@@ -1,96 +1,86 @@
-# gestion-de-restorant
+# 🍽️ Gestion de Restaurant – Application Web PHP/MySQL
 
-## Description
+Bienvenue dans **gestion-de-restorant**, une application web simple et efficace pour gérer toutes les opérations essentielles d’un restaurant.
 
-Ce projet, **gestion-de-restorant**, est une application web de gestion de restaurant développée en PHP avec MySQL. Il permet aux administrateurs de gérer les différentes entités d’un restaurant, notamment les catégories, les plats (foods) et les administrateurs. L’interface d’administration offre des fonctionnalités de CRUD (Créer, Lire, Mettre à jour, Supprimer) pour faciliter la gestion quotidienne du restaurant.
-
----
-
-## Fonctionnalités principales
-
-- **Authentification des administrateurs**
-- **Gestion des administrateurs** : Ajout, modification, suppression.
-- **Gestion des catégories** : Ajout, modification, suppression, image associée, statut "en vedette" et "actif".
-- **Gestion des plats** : Ajout, modification, suppression, image, description, prix, catégorie, statut "en vedette" et "actif".
-- **Gestion des images** pour les catégories et les plats.
-- **Messages de feedback** pour informer l'utilisateur de la réussite ou de l'échec des opérations.
-- **Sécurité minimale** : Vérification basique des accès et des opérations.
+[![Made with PHP](https://img.shields.io/badge/Made%20with-PHP-blue.svg)](https://www.php.net/)
+[![Database: MySQL](https://img.shields.io/badge/Database-MySQL-blue.svg)](https://www.mysql.com/)
+[![Status: En développement](https://img.shields.io/badge/Status-En%20cours-yellow)]()
+[![Auteur: Chaymae Bayousfi](https://img.shields.io/badge/Auteur-Chaymae%20Bayousfi-green)](https://github.com/chaymae-bayousfi)
 
 ---
 
-## Structure du projet
+## 📌 Description
 
-```
+Ce projet est une **interface d’administration complète** permettant de gérer :
+
+- Les administrateurs 👩‍💼
+- Les catégories de plats 🍝
+- Les plats 🍕 avec images, descriptions et statuts
+
+Développée avec **PHP** et **MySQL**, cette application propose une interface intuitive avec toutes les fonctionnalités **CRUD** (Créer, Lire, Mettre à jour, Supprimer).
+
+---
+
+## ✨ Fonctionnalités
+
+✅ Authentification sécurisée des administrateurs  
+✅ Ajout / modification / suppression des **administrateurs**  
+✅ Gestion complète des **catégories** : image, statut "en vedette", "actif"  
+✅ Gestion des **plats** : prix, description, image, catégorie  
+✅ Upload sécurisé des images  
+✅ Affichage de **messages de feedback** dynamiques (succès/échec)  
+✅ Vérification d’accès simple
+
+---
+
+## 🗂️ Structure du Projet
+
 mini_projet/
-├── admin/
-│   ├── add-admin.php
-│   ├── add-category.php
-│   ├── add-food.php
-│   ├── delete-admin.php
-│   ├── delete-category.php
-│   ├── delete-food.php
-│   ├── manage-admin.php
-│   ├── manage-category.php
-│   ├── manage-food.php
-│   ├── partials/
-│   │   ├── footer.php
-│   │   ├── menu.php
-│   │   └── ...
-│   └── ...
+├── admin/ # Interface admin
+│ ├── add-admin.php
+│ ├── manage-category.php
+│ ├── ...
+│ └── partials/ # Menus & pied de page
 ├── config/
-│   └── constants.php
+│ └── constants.php # Paramètres DB
 ├── css/
-│   └── style.css
-├── images/
-│   ├── category/
-│   └── food/
-├── index.php
+│ └── style.css # Feuille de style
+├── images/ # Dossier des images
+│ ├── category/
+│ └── food/
+├── index.php # Page d’accueil
 └── ...
+
+---
+
+## 🚀 Installation rapide
+
+### 🔧 Prérequis
+
+- 🐘 PHP ≥ 7.x
+- 🐬 MySQL/MariaDB
+- 🌐 Serveur local : XAMPP, WAMP, LAMP, etc.
+- 🧭 Navigateur Web
+
+### 🧑‍💻 Étapes
+
+```bash
+# 1. Cloner le dépôt
+git clone https://github.com/chaymae-bayousfi/gestion-de-restorant.git
+
+# 2. Copier dans votre serveur local
+# Ex: sous XAMPP
+mv gestion-de-restorant /xampp/htdocs/mini_projet
+
+# 3. Créer la base de données via phpMyAdmin ou MySQL CLI
+
+# 4. Modifier les infos de connexion dans :
+nano mini_projet/config/constants.php
+
+# 5. Lancer le site :
+http://localhost/mini_projet/admin/
 ```
-
----
-
-## Installation
-
-### Prérequis
-
-- Serveur web (Apache, Nginx…)
-- PHP >= 7.x
-- MySQL/MariaDB
-- Navigateur web
-
-### Étapes
-
-1. **Cloner le dépôt**
-   ```sh
-   git clone https://github.com/chaymae-bayousfi/gestion-de-restorant.git
-   ```
-
-2. **Déplacer le dossier dans votre serveur local**
-   - Placez le dossier `mini_projet` dans le répertoire `htdocs` (XAMPP) ou `www` (WAMP/LAMP) de votre serveur web.
-
-3. **Créer la base de données**
-   - Créez une base de données nommée (par exemple) `restorant` dans phpMyAdmin ou en ligne de commande.
-
-4. **Configurer la connexion à la base de données**
-   - Ouvrez `mini_projet/config/constants.php`
-   - Modifiez les constantes `LOCALHOST`, `DB_USERNAME`, `DB_PASSWORD`, et `DB_NAME` selon votre configuration locale.
-
-5. **Lancer l’application**
-   - Accédez à `http://localhost/mini_projet/admin/` dans votre navigateur.
-
----
-
-## Exemples d’utilisation
-
-- **Ajouter un administrateur** : Rendez-vous dans la section "Add Admin", remplissez le formulaire.
-- **Ajouter une catégorie** : Ajoutez un titre, une image et définissez si la catégorie est en vedette ou active.
-- **Ajouter un plat** : Saisissez le nom, la description, le prix, choisissez une image et la catégorie correspondante.
-
----
-
-## Auteur
-
-- [chaymae-bayousfi](https://github.com/chaymae-bayousfi)
-
----
+## 👤 Auteur
+Made with ❤️ by
+me Chaymae Bayousfi
+and https://github.com/hasnaeaqe

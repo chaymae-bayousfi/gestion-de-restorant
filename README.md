@@ -1,13 +1,12 @@
 # 🍽️ Gestion de Restaurant – Application Web PHP/MySQL
 
 Bienvenue dans **gestion-de-restorant**, une application web simple et efficace pour gérer toutes les opérations essentielles d’un restaurant.
-
 [![Made with PHP](https://img.shields.io/badge/Made%20with-PHP-blue.svg)](https://www.php.net/)
 [![Database: MySQL](https://img.shields.io/badge/Database-MySQL-blue.svg)](https://www.mysql.com/)
 [![Status: En développement](https://img.shields.io/badge/Status-En%20cours-yellow)]()
 [![Auteur: Chaymae Bayousfi](https://img.shields.io/badge/Auteur-Chaymae%20Bayousfi-green)](https://github.com/chaymae-bayousfi)
-
----
+[![Co-Auteur: Hasnae Aqajjef](https://img.shields.io/badge/Co--Auteur-Hasnae%20Aqajjef-purple)](https://github.com/hasnaeaqajjef)
+-----------
 
 ## 📌 Description
 
